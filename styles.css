@@ -1,0 +1,133 @@
+:root {
+  --color-white: white;
+  --color-black: black;
+  --default-animation-timing: 500ms;
+}
+
+@font-face {
+  font-family: 'ChicagoWeb';
+  src: url('fonts/Chicago.eot');
+  src: local('☺'), url('fonts/Chicago.woff') format('woff'), url('fonts/Chicago.ttf') format('truetype'), url('fonts/Chicago.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CairoWeb';
+  src: url('fonts/Cairo.eot');
+  src: local('☺'), url('fonts/Cairo.woff') format('woff'), url('fonts/Cairo.ttf') format('truetype'), url('fonts/Cairo.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RamonaWeb';
+  src: url('fonts/Ramona.eot');
+  src: local('☺'), url('fonts/Ramona.woff') format('woff'), url('fonts/Ramona.ttf') format('truetype'), url('fonts/Ramona.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+a {
+  text-decoration-style: dotted;
+  color: gray;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+body {
+  align-content: center;
+  align-items: center;
+  background: grey;
+  display: flex;
+  font-family: 'ChicagoWeb';
+  font-size: 18px;
+  height: 100vh;
+  justify-content: center;
+  transition: background var(--default-animation-timing) ease-in-out;
+}
+
+.icon {
+  float: left;
+  font-family: 'CairoWeb';
+  font-size: 110px;
+  height: 15%;
+  margin-right: 2rem;
+  text-align: center;
+  transition: all var(--default-animation-timing) ease-in-out;
+  vertical-align: middle;
+  width: 15%;
+}
+
+h1 {
+  font-family: 'RamonaWeb';
+  font-size: 50px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.why-p2p {
+  font-size: 20px;
+  margin: 0;
+}
+
+button {
+  outline: none;
+  box-shadow: none;
+  padding: 0.5rem;
+  font-family: 'ChicagoWeb';
+  border: 1px solid var(--color-black);
+  border-radius: 2px;
+  font-size: 18px;
+  margin-right: 0.25rem;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+button:active {
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+.nametag {
+  background: var(--color-white);
+  border-radius: 1rem;
+  border: 1px solid var(--color-black);
+  height: max-content;
+  min-height: 300px;
+  overflow: hidden;
+  padding: 8rem 2rem 2rem;
+  position: relative;
+  width: max-content;
+}
+
+.nametag__footer,
+.nametag__header {
+  color: var(--color-white);
+  left: 0;
+  position: absolute;
+  right: 0;
+  transition: background var(--default-animation-timing) ease-in-out;
+}
+
+.nametag__header {
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  top: 0;
+}
+
+.nametag__footer {
+  bottom: 0;
+  height: 30px;
+}
+
+.nametag__header__hello {
+  display: block;
+  font-size: 4rem;
+}
